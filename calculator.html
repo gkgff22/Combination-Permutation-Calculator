@@ -11,6 +11,7 @@
 		}
 
 		table {
+			width: max-content;
 			text-align: center;
 			border-collapse: collapse;
 		}
@@ -349,7 +350,7 @@
 			<td><span id="resBonus1"></span></td>
 			<td><button type="button" onclick="clickBonus1()">Compute</button></td>
 			<td>$$n^m$$</td>
-			<td>Each of the m distinct object may be distributed into any of the n distinct containers</td>
+			<td style="text-align: -webkit-auto;">Each of the m distinct object may be distributed into any of the n distinct containers</td>
 		</tr>
 		<tr>
 			<td>yes</td>
@@ -358,7 +359,7 @@
 			<td><span id="resBonus2"></span></td>
 			<td><button type="button" onclick="clickBonus2()">Compute</button></td>
 			<td>$$n!S(m,n) \mbox{ //} onto(m,n)$$</td>
-			<td>Each of the m distinct object may be distributed into any of the n distinct containers with no
+			<td style="text-align: -webkit-auto;">Each of the m distinct object may be distributed into any of the n distinct containers with no
 				containers left empty</td>
 		</tr>
 		<tr>
@@ -368,7 +369,7 @@
 			<td><span id="resBonus3"></span></td>
 			<td><button type="button" onclick="clickBonus3()">Compute</button></td>
 			<td>$$S(m,1)+S(m,2)+...+S(m,n)$$</td>
-			<td>m distinct objects onto 1,2,...,n identical containers, leaving no container empty</td>
+			<td style="text-align: -webkit-auto;">m distinct objects onto 1, 2, ..., n identical containers, leaving no container empty</td>
 		</tr>
 		<tr>
 			<td>yes</td>
@@ -377,7 +378,7 @@
 			<td><span id="resBonus4"></span></td>
 			<td><button type="button" onclick="clickBonus4()">Compute</button></td>
 			<td>$$S(m,n)$$</td>
-			<td>m distinct objects onto n identical containers, leaving no container empty</td>
+			<td style="text-align: -webkit-auto;">m distinct objects onto n identical containers, leaving no container empty</td>
 		</tr>
 		<tr>
 			<td>no</td>
@@ -386,7 +387,7 @@
 			<td><span id="resBonus5"></span></td>
 			<td><button type="button" onclick="clickBonus5()">Compute</button></td>
 			<td>$$\binom {m+n-1}{m}$$</td>
-			<td>Ordering food from the view of kitchen (m kids (identical), n foods (distinct); m identical pennies into
+			<td style="text-align: -webkit-auto;">Ordering food from the view of kitchen (m kids (identical), n foods (distinct); m identical pennies into
 				n distinct container; nonnegative integer solutions for an equation)</td>
 		</tr>
 		<tr>
@@ -396,7 +397,7 @@
 			<td><span id="resBonus6"></span></td>
 			<td><button type="button" onclick="clickBonus6()">Compute</button></td>
 			<td>$$\binom{m-1}{m-n} \mbox{ } (=\binom{m-1}{n-1}=\binom{(m-n)-1}{(m-n)})$$</td>
-			<td>Deliver one object to each of the n distinct containers first, then distribute m-n objects to the n
+			<td style="text-align: -webkit-auto;">Deliver one object to each of the n distinct containers first, then distribute m-n objects to the n
 				containers</td>
 		</tr>
 		<tr>
@@ -407,7 +408,7 @@
 			<td><button type="button" onclick="clickBonus7()">Compute</button></td>
 			<td>$$\begin{cases} p(m) &\mbox{ for } n=m\\p(m,1)+p(m,2)+...+p(m,n)^+ & \mbox{for }{n <
 					m}\end{cases}$$</td>
-			<td>Partition integer m into at most n summands (with some 0 summands, corresponding to empty containers)
+			<td style="text-align: -webkit-auto;">Partition integer m into at most n summands (with some 0 summands, corresponding to empty containers)
 			</td>
 		</tr>
 		<tr>
@@ -417,7 +418,7 @@
 			<td><span id="resBonus8"></span></td>
 			<td><button type="button" onclick="clickBonus8()">Compute</button></td>
 			<td>$$p(m,n)$$</td>
-			<td>Partition integer m into exactly n summands (with no container empty)</td>
+			<td style="text-align: -webkit-auto;">Partition integer m into exactly n summands (with no container empty)</td>
 		</tr>
 	</table>
 

@@ -30,8 +30,11 @@
 			input[type="number"] 	{	width: 60px;
 									}
 		</style>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+		<!--
 		<SCRIPT SRC='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></SCRIPT>
-		<SCRIPT>MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</SCRIPT>
+		<SCRIPT>MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</SCRIPT>-->
 	</head>
 	<body>	<!-- The <body> tag defines the document's body.
 				 The <body> element contains all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc.
@@ -275,7 +278,7 @@
 							$$\{L_n\}_{n=1}^\infty$$
 							defined by the linear recurrence equation
 							$$L_n = L_{n-1} + L_{n-2}$$
-							with $$L_0 = 2$$ax`nd $$L_1 = 1$$
+							with $$L_0 = 2$$and $$L_1 = 1$$
 						</label>
 					</td>
 					<td>
@@ -793,7 +796,6 @@
 				//if (n == m)	printAllUniqueParts(m);
 				res = 0;
 				for (i = 1; i <= n; i++) res += Bonus8(m, i);
-				document.getElementById("resBonus7").innerHTML += "Number of Partitions: "
 				document.getElementById("resBonus7").innerHTML += res;
 				document.getElementById("resBonus7").innerHTML += "</br>"
 				printAllUniqueParts(m);

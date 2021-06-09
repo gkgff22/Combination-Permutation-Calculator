@@ -405,7 +405,9 @@
 			<td>no</td>
 			<td>yes</td>
 			<td><span id="resBonus7"></span></td>
-			<td><button type="button" onclick="clickBonus7()">Compute</button></td>
+			<td><button type="button" onclick="clickBonus7()">Compute</button>
+				<button type="button" onclick="clickPartition()">Show all partitions</button>
+			</td>
 			<td>$$\begin{cases} p(m) &\mbox{ for } n=m\\p(m,1)+p(m,2)+...+p(m,n)^+ & \mbox{for }{n <
 					m}\end{cases}$$</td>
 			<td style="text-align: -webkit-auto;">Partition integer m into at most n summands (with some 0 summands, corresponding to empty containers)
@@ -758,11 +760,18 @@
 			if (invalidBonus(n, m)) return;
 			res = 0;
 			for (i = 1; i <= n; i++) res += Bonus8(m, i);
-			document.getElementById("resBonus7").innerHTML += "Number of Partitions: ";
+			//document.getElementById("resBonus7").innerHTML += "Number of Partitions: ";
 			document.getElementById("resBonus7").innerHTML += res;
-			document.getElementById("resBonus7").innerHTML += "</br></br>";
-			printAllUniqueParts(m);
+			//document.getElementById("resBonus7").innerHTML += "</br></br>";
+			//printAllUniqueParts(m);
 
+		}
+		function clickPartition(){
+			document.getElementById("resBonus7").innerHTML = "";
+			n = parseInt(document.getElementById("n_").value);
+			m = parseInt(document.getElementById("m_").value);
+			if (invalidBonus(n, m)) return;
+			printAllUniqueParts(m);
 		}
 		function clickBonus8() {
 			document.getElementById("resBonus8").innerHTML = "";
